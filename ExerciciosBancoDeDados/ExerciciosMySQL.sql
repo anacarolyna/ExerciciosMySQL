@@ -8,16 +8,16 @@ USE db_servico_rh;
 
 -- Criação da tabela
 CREATE TABLE tb_colaboradores (
-id bigint AUTO_INCREMENT,
-nome_completo varchar(255),
-sexo varchar (255),
-idade int,
-cidade varchar(255),
-salario int,
+id BIGINT AUTO_INCREMENT,
+nome_completo VARCHAR(255),
+sexo VARCHAR (255),
+idade INT,
+cidade VARCHAR(255),
+salario INT,
 
 PRIMARY KEY (id)
 );
-ALTER TABLE tb_colaboradores MODIFY salario decimal (65, 3);
+ALTER TABLE tb_colaboradores MODIFY salario DECIMAL (65, 3);
 
 -- Insere dados para preencher a tabela
 INSERT INTO tb_colaboradores (nome_completo, sexo, idade, cidade, salario)
@@ -50,11 +50,11 @@ CREATE DATABASE db_ecommerce;
 USE db_ecommerce; 
 
 CREATE TABLE tb_produtos (
-id bigint AUTO_INCREMENT,
-marca varchar(255),
-categoria varchar (255),
-qntd_estoque bigint,
-preco decimal (65,3),
+id BIGINT AUTO_INCREMENT,
+marca VARCHAR(255),
+categoria VARCHAR (255),
+qntd_estoque BIGINT,
+preco DECIMAL (65,3),
 
 PRIMARY KEY (id)
 
@@ -107,10 +107,10 @@ USE db_escola;
 CREATE TABLE tb_alunos (
 id bigint AUTO_INCREMENT,
 nome_completo varchar(255),
-sexo varchar(255),
-idade int,
-ano varchar(255),
-nota decimal(65, 1),
+sexo VARCHAR(255),
+idade INT,
+ano VARCHAR(255),
+nota DECIMAL(65, 1),
 
 PRIMARY KEY (id) 
 );
