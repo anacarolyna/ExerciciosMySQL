@@ -1,4 +1,4 @@
--- Quitanda --
+-- .....Quitanda.... --
 
 CREATE DATABASE db_quitanda;
 USE db_quitanda;
